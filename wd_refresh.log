@@ -6763,3 +6763,326 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild
 10:00:37  INFO        Skipped items      : ['0011-02879']
 10:00:37  INFO      ============================================================
 10:00:37  INFO      Exceptions exported → C:\Users\kmageshkumar\OneDrive - Ichor Systems\Scripts\WD Refresher Webpage\wd_exceptions.xlsx  (1 row(s))
+13:09:53  INFO      Loaded 4 item(s) from 'items.xlsx'.
+13:09:53  INFO      ====== WebDriver manager ======
+13:09:55  INFO      Get LATEST geckodriver version for None firefox
+13:09:56  INFO      Getting latest mozilla release info for v0.36.0
+13:09:56  INFO      About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win64.zip
+13:09:57  INFO      Driver downloading response is 200
+13:09:58  INFO      Get LATEST geckodriver version for None firefox
+13:10:00  INFO      Get LATEST geckodriver version for None firefox
+13:10:01  INFO      Driver has been saved in cache [C:\Users\kmageshkumar\.wdm\drivers\geckodriver\win64\v0.36.0]
+13:10:08  INFO      Opening Oracle Cloud…
+13:10:12  INFO      Login page detected – logging in automatically…
+13:10:12  INFO        ► [Username field                ]  tag=input     id=okta-signin-username  title=–  alt=–  aria=–
+13:10:13  INFO        ► [Next / Continue               ]  tag=input     id=okta-signin-submit  title=–  alt=–  aria=–
+13:10:13  INFO        ► [Password field                ]  tag=input     id=okta-signin-password  title=–  alt=–  aria=–
+13:10:14  INFO        ► [Sign In                       ]  tag=input     id=okta-signin-submit  title=–  alt=–  aria=–
+13:10:17  INFO      Login complete.
+13:10:17  INFO      Opening Manage Work Definitions…
+13:10:20  INFO        ► [Favorites star                ]  tag=a         id=pt1:_UISfavIconu  title=Favorites and Recent Items  alt=–  aria=–
+13:10:21  INFO        ► [Manage Work Definitions       ]  tag=a         id=pt1:_UISfpr1:0:itr1_RI:0:cl3_RI  title=Manage Work Definitions  alt=–  aria=–
+13:10:24  INFO      Manage Work Definitions loaded.
+13:10:24  INFO      Item 1 / 4
+13:10:24  INFO      ──────────────────────────────────────────────────
+13:10:24  INFO      Processing: 511612-DG-GPA
+13:10:24  INFO      Searching for: 511612-DG-GPA
+13:10:24  INFO        ► [Item field                    ]  tag=input     id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1:value00::content  title=–  alt=–  aria= Item
+13:10:25  INFO        ► [Search button                 ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1::search  title=–  alt=–  aria=–
+13:10:26  INFO      Waiting for search results…
+13:10:33  INFO      Opening Main (version=1, prod_priority=1).
+13:10:33  INFO        ► [Main link                     ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:AT2:_ATp:wdTbl:0:cl1  title=–  alt=–  aria=–
+13:10:36  INFO      Work Definition editor loaded.
+13:10:36  INFO      Double-clicking Kitting operation…
+13:10:37  INFO        ► [Kitting operation node        ]  tag=g         id=–  title=–  alt=–  aria=–
+13:10:39  INFO      Kitting expanded.
+13:10:39  INFO      Checking for Items sub-box in Kitting…
+13:10:39  INFO      Items sub-box found – deleting.
+13:10:39  INFO      Step 9: clicking 'Done Collect' tick…
+13:10:39  INFO        ► [Done Collect tick             ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r1:0:sModBt  title=Collect  alt=–  aria=–
+13:10:40  INFO      Step 9: waiting for canvas to settle after tick click…
+13:10:43  INFO      Step 9a: clicking 'Not Collected' circle on Items…
+13:10:43  INFO        ► [Not Collected circle (Items)  ]  tag=image     id=–  title=–  alt=–  aria=–
+13:10:47  INFO      Circle state after click: /fscmUI/images/applcore/vin/qual_selectcheckblank_24.svg
+13:10:47  INFO      Step 9b: right-clicking left basket → Actions → Delete…
+13:10:47  INFO        ► [Left basket                   ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r1:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+13:10:50  INFO        ► [menu:Actions                  ]  tag=td        id=–  title=–  alt=–  aria=–
+13:10:52  INFO        ► [menu:Delete                   ]  tag=td        id=–  title=–  alt=–  aria=–
+13:10:54  INFO      Step 10: waiting for Delete confirmation dialog…
+13:10:54  INFO        ► [Delete OK                     ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r1:0:r8:0:cb1  title=–  alt=–  aria=–
+13:10:54  INFO      Waiting for Items sub-box to disappear…
+13:10:56  INFO      Items deleted.
+13:10:56  INFO      Collecting all direct children…
+13:10:56  INFO        ► [Item Structure top card       ]  tag=rect      id=–  title=–  alt=–  aria=–
+13:10:59  INFO        ► [Collect All Direct Children   ]  tag=td        id=–  title=–  alt=–  aria=–
+13:10:59  INFO      Right-panel basket populated.
+13:10:59  INFO      Collection complete.
+13:10:59  INFO      Assigning basket to Kitting…
+13:10:59  INFO      Step 14: right-clicking right-panel basket…
+13:10:59  INFO        ► [Right basket                  ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r3:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+13:11:00  WARNING   Step 'assign_basket' attempt 1/3 failed: Message: The element with the reference 3f665c65-cc18-44ae-8e0c-f35739330b9f is stale; either its node document is not the active document, or it is no longer connected to the DOM; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:831:5
+getKnownElement@chrome://remote/content/marionette/json.sys.mjs:412:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:270:20
+cloneObject/result<@chrome://remote/content/marionette/json.sys.mjs:53:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:53:25
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:298:16
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:298:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:302:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:174:30
+
+13:11:02  INFO      Step 14: right-clicking right-panel basket…
+13:11:02  INFO        ► [Right basket                  ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r3:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+13:11:05  INFO        ► [menu:Actions                  ]  tag=td        id=–  title=–  alt=–  aria=–
+13:11:07  INFO        ► [menu:Assign                   ]  tag=td        id=–  title=–  alt=–  aria=–
+13:11:09  INFO      Step 15: waiting for 'Assign Operation Items' dialog to open…
+13:11:15  INFO      Step 15: dialog open — clicking OK…
+13:11:15  INFO        ► [Assign dialog OK              ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r3:0:r22:0:cb3  title=–  alt=–  aria=–
+13:11:16  INFO      Waiting for Assign dialog to close…
+13:11:21  INFO      Assignment complete.
+13:11:21  INFO      Verification: clicking 'Expand All' to reveal all sub-panels…
+13:11:21  INFO        ► [Expand All                    ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r1:0:cil02  title=Expand All  alt=–  aria=–
+13:11:23  INFO      Verification: counting bold 'Items' text nodes in canvas…
+13:11:23  INFO      Bold 'Items' node count: 1
+13:11:23  INFO      ✓ Verification passed for 511612-DG-GPA (Items count = 1).
+13:11:23  INFO      Save and Close…
+13:11:23  INFO        ► [Save and Close                ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:cb2  title=–  alt=–  aria=–
+13:11:26  INFO      Returned to search page.
+13:11:27  INFO      Opening Manage Work Definitions…
+13:11:27  INFO        ► [Favorites star                ]  tag=a         id=_FOpt1:_UISfavIconu  title=Favorites and Recent Items  alt=–  aria=–
+13:11:27  INFO        ► [Manage Work Definitions       ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MainAreaTab2::disAcr  title=–  alt=–  aria=–
+13:11:28  INFO      Manage Work Definitions loaded.
+13:11:28  INFO      ✓  511612-DG-GPA complete.
+13:11:28  INFO      Item 2 / 4
+13:11:28  INFO      ──────────────────────────────────────────────────
+13:11:28  INFO      Processing: 512478-DG-GPA
+13:11:28  INFO      Searching for: 512478-DG-GPA
+13:11:29  INFO        ► [Item field                    ]  tag=input     id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1:value00::content  title=–  alt=–  aria= Item
+13:11:30  INFO        ► [Search button                 ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1::search  title=–  alt=–  aria=–
+13:11:31  INFO      Waiting for search results…
+13:11:38  INFO      Opening Main (version=1, prod_priority=1).
+13:11:38  INFO        ► [Main link                     ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:AT2:_ATp:wdTbl:1:cl1  title=–  alt=–  aria=–
+13:11:40  INFO      Work Definition editor loaded.
+13:11:40  INFO      Double-clicking Kitting operation…
+13:11:40  INFO        ► [Kitting operation node        ]  tag=g         id=–  title=–  alt=–  aria=–
+13:11:43  INFO      Kitting expanded.
+13:11:43  INFO      Checking for Items sub-box in Kitting…
+13:11:43  INFO      Items sub-box found – deleting.
+13:11:43  INFO      Step 9: clicking 'Done Collect' tick…
+13:11:43  INFO        ► [Done Collect tick             ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt4:0:AP1:r1:0:sModBt  title=Collect  alt=–  aria=–
+13:11:43  INFO      Step 9: waiting for canvas to settle after tick click…
+13:11:46  INFO      Step 9a: clicking 'Not Collected' circle on Items…
+13:11:46  INFO        ► [Not Collected circle (Items)  ]  tag=image     id=–  title=–  alt=–  aria=–
+13:11:50  INFO      Circle state after click: /fscmUI/images/applcore/vin/qual_selectcheckblank_24.svg
+13:11:50  INFO      Step 9b: right-clicking left basket → Actions → Delete…
+13:11:50  INFO        ► [Left basket                   ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt4:0:AP1:r1:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+13:11:53  INFO        ► [menu:Actions                  ]  tag=td        id=–  title=–  alt=–  aria=–
+13:11:55  INFO        ► [menu:Delete                   ]  tag=td        id=–  title=–  alt=–  aria=–
+13:11:57  INFO      Step 10: waiting for Delete confirmation dialog…
+13:11:57  INFO        ► [Delete OK                     ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt4:0:AP1:r1:0:r8:0:cb1  title=–  alt=–  aria=–
+13:11:58  INFO      Waiting for Items sub-box to disappear…
+13:12:00  INFO      Items deleted.
+13:12:00  INFO      Collecting all direct children…
+13:12:00  INFO        ► [Item Structure top card       ]  tag=rect      id=–  title=–  alt=–  aria=–
+13:12:03  INFO        ► [Collect All Direct Children   ]  tag=td        id=–  title=–  alt=–  aria=–
+13:12:03  INFO      Right-panel basket populated.
+13:12:03  INFO      Collection complete.
+13:12:03  INFO      Assigning basket to Kitting…
+13:12:03  INFO      Step 14: right-clicking right-panel basket…
+13:12:03  INFO        ► [Right basket                  ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt4:0:AP1:r3:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+13:12:04  WARNING   Step 'assign_basket' attempt 1/3 failed: Message: The element with the reference ad02867d-6239-4a21-8259-1aa79e571feb is stale; either its node document is not the active document, or it is no longer connected to the DOM; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:831:5
+getKnownElement@chrome://remote/content/marionette/json.sys.mjs:412:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:270:20
+cloneObject/result<@chrome://remote/content/marionette/json.sys.mjs:53:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:53:25
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:298:16
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:298:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:302:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:174:30
+
+13:12:06  INFO      Step 14: right-clicking right-panel basket…
+13:12:06  INFO        ► [Right basket                  ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt4:0:AP1:r3:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+13:12:09  INFO        ► [menu:Actions                  ]  tag=td        id=–  title=–  alt=–  aria=–
+13:12:11  INFO        ► [menu:Assign                   ]  tag=td        id=–  title=–  alt=–  aria=–
+13:12:13  INFO      Step 15: waiting for 'Assign Operation Items' dialog to open…
+13:12:17  INFO      Step 15: dialog open — clicking OK…
+13:12:17  INFO        ► [Assign dialog OK              ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt4:0:AP1:r3:0:r22:0:cb3  title=–  alt=–  aria=–
+13:12:17  INFO      Waiting for Assign dialog to close…
+13:12:21  INFO      Assignment complete.
+13:12:21  INFO      Verification: clicking 'Expand All' to reveal all sub-panels…
+13:12:21  INFO        ► [Expand All                    ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt4:0:AP1:r1:0:cil02  title=Expand All  alt=–  aria=–
+13:12:23  INFO      Verification: counting bold 'Items' text nodes in canvas…
+13:12:23  INFO      Bold 'Items' node count: 1
+13:12:23  INFO      ✓ Verification passed for 512478-DG-GPA (Items count = 1).
+13:12:23  INFO      Save and Close…
+13:12:23  INFO        ► [Save and Close                ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt4:0:AP1:cb2  title=–  alt=–  aria=–
+13:12:25  INFO      Returned to search page.
+13:12:26  INFO      Opening Manage Work Definitions…
+13:12:26  INFO        ► [Favorites star                ]  tag=a         id=_FOpt1:_UISfavIconu  title=Favorites and Recent Items  alt=–  aria=–
+13:12:27  INFO        ► [Manage Work Definitions       ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MainAreaTab2::disAcr  title=–  alt=–  aria=–
+13:12:27  INFO      Manage Work Definitions loaded.
+13:12:27  INFO      ✓  512478-DG-GPA complete.
+13:12:27  INFO      Item 3 / 4
+13:12:27  INFO      ──────────────────────────────────────────────────
+13:12:27  INFO      Processing: 512478-DG-GPB
+13:12:27  INFO      Searching for: 512478-DG-GPB
+13:12:28  INFO        ► [Item field                    ]  tag=input     id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1:value00::content  title=–  alt=–  aria= Item
+13:12:29  INFO        ► [Search button                 ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1::search  title=–  alt=–  aria=–
+13:12:30  INFO      Waiting for search results…
+13:12:37  INFO      Opening Main (version=1, prod_priority=1).
+13:12:37  INFO        ► [Main link                     ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:AT2:_ATp:wdTbl:1:cl1  title=–  alt=–  aria=–
+13:12:39  INFO      Work Definition editor loaded.
+13:12:39  INFO      Double-clicking Kitting operation…
+13:12:40  INFO        ► [Kitting operation node        ]  tag=g         id=–  title=–  alt=–  aria=–
+13:12:42  INFO      Kitting expanded.
+13:12:42  INFO      Checking for Items sub-box in Kitting…
+13:12:42  INFO      Items sub-box found – deleting.
+13:12:42  INFO      Step 9: clicking 'Done Collect' tick…
+13:12:42  INFO        ► [Done Collect tick             ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt5:0:AP1:r1:0:sModBt  title=Collect  alt=–  aria=–
+13:12:43  INFO      Step 9: waiting for canvas to settle after tick click…
+13:12:46  INFO      Step 9a: clicking 'Not Collected' circle on Items…
+13:12:46  INFO        ► [Not Collected circle (Items)  ]  tag=image     id=–  title=–  alt=–  aria=–
+13:12:50  INFO      Circle state after click: /fscmUI/images/applcore/vin/qual_selectcheckblank_24.svg
+13:12:50  INFO      Step 9b: right-clicking left basket → Actions → Delete…
+13:12:50  INFO        ► [Left basket                   ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt5:0:AP1:r1:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+13:12:53  INFO        ► [menu:Actions                  ]  tag=td        id=–  title=–  alt=–  aria=–
+13:12:55  INFO        ► [menu:Delete                   ]  tag=td        id=–  title=–  alt=–  aria=–
+13:12:56  INFO      Step 10: waiting for Delete confirmation dialog…
+13:12:56  INFO        ► [Delete OK                     ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt5:0:AP1:r1:0:r8:0:cb1  title=–  alt=–  aria=–
+13:12:57  INFO      Waiting for Items sub-box to disappear…
+13:12:59  INFO      Items deleted.
+13:12:59  INFO      Collecting all direct children…
+13:12:59  INFO        ► [Item Structure top card       ]  tag=rect      id=–  title=–  alt=–  aria=–
+13:13:02  INFO        ► [Collect All Direct Children   ]  tag=td        id=–  title=–  alt=–  aria=–
+13:13:02  INFO      Right-panel basket populated.
+13:13:02  INFO      Collection complete.
+13:13:02  INFO      Assigning basket to Kitting…
+13:13:02  INFO      Step 14: right-clicking right-panel basket…
+13:13:02  INFO        ► [Right basket                  ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt5:0:AP1:r3:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+13:13:03  WARNING   Step 'assign_basket' attempt 1/3 failed: Message: The element with the reference 0e3d5967-f78c-4515-91e4-88850058372d is stale; either its node document is not the active document, or it is no longer connected to the DOM; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:831:5
+getKnownElement@chrome://remote/content/marionette/json.sys.mjs:412:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:270:20
+cloneObject/result<@chrome://remote/content/marionette/json.sys.mjs:53:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:53:25
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:298:16
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:298:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:302:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:174:30
+
+13:13:05  INFO      Step 14: right-clicking right-panel basket…
+13:13:05  INFO        ► [Right basket                  ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt5:0:AP1:r3:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+13:13:08  INFO        ► [menu:Actions                  ]  tag=td        id=–  title=–  alt=–  aria=–
+13:13:10  INFO        ► [menu:Assign                   ]  tag=td        id=–  title=–  alt=–  aria=–
+13:13:12  INFO      Step 15: waiting for 'Assign Operation Items' dialog to open…
+13:13:15  INFO      Step 15: dialog open — clicking OK…
+13:13:15  INFO        ► [Assign dialog OK              ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt5:0:AP1:r3:0:r22:0:cb3  title=–  alt=–  aria=–
+13:13:15  INFO      Waiting for Assign dialog to close…
+13:13:20  INFO      Assignment complete.
+13:13:20  INFO      Verification: clicking 'Expand All' to reveal all sub-panels…
+13:13:20  INFO        ► [Expand All                    ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt5:0:AP1:r1:0:cil02  title=Expand All  alt=–  aria=–
+13:13:21  INFO      Verification: counting bold 'Items' text nodes in canvas…
+13:13:21  INFO      Bold 'Items' node count: 1
+13:13:21  INFO      ✓ Verification passed for 512478-DG-GPB (Items count = 1).
+13:13:21  INFO      Save and Close…
+13:13:21  INFO        ► [Save and Close                ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt5:0:AP1:cb2  title=–  alt=–  aria=–
+13:13:24  INFO      Returned to search page.
+13:13:25  INFO      Opening Manage Work Definitions…
+13:13:25  INFO        ► [Favorites star                ]  tag=a         id=_FOpt1:_UISfavIconu  title=Favorites and Recent Items  alt=–  aria=–
+13:13:25  INFO        ► [Manage Work Definitions       ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MainAreaTab2::disAcr  title=–  alt=–  aria=–
+13:13:26  INFO      Manage Work Definitions loaded.
+13:13:26  INFO      ✓  512478-DG-GPB complete.
+13:13:26  INFO      Item 4 / 4
+13:13:26  INFO      ──────────────────────────────────────────────────
+13:13:26  INFO      Processing: 512478-DG-GPC
+13:13:26  INFO      Searching for: 512478-DG-GPC
+13:13:26  INFO        ► [Item field                    ]  tag=input     id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1:value00::content  title=–  alt=–  aria= Item
+13:13:28  INFO        ► [Search button                 ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1::search  title=–  alt=–  aria=–
+13:13:28  INFO      Waiting for search results…
+13:13:36  INFO      Opening Main (version=1, prod_priority=1).
+13:13:36  INFO        ► [Main link                     ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:AT2:_ATp:wdTbl:1:cl1  title=–  alt=–  aria=–
+13:13:39  INFO      Work Definition editor loaded.
+13:13:39  INFO      Double-clicking Kitting operation…
+13:13:39  INFO        ► [Kitting operation node        ]  tag=g         id=–  title=–  alt=–  aria=–
+13:13:42  INFO      Kitting expanded.
+13:13:42  INFO      Checking for Items sub-box in Kitting…
+13:13:42  INFO      Items sub-box found – deleting.
+13:13:42  INFO      Step 9: clicking 'Done Collect' tick…
+13:13:42  INFO        ► [Done Collect tick             ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt6:0:AP1:r1:0:sModBt  title=Collect  alt=–  aria=–
+13:13:43  INFO      Step 9: waiting for canvas to settle after tick click…
+13:13:46  INFO      Step 9a: clicking 'Not Collected' circle on Items…
+13:13:46  INFO        ► [Not Collected circle (Items)  ]  tag=image     id=–  title=–  alt=–  aria=–
+13:13:50  INFO      Circle state after click: /fscmUI/images/applcore/vin/qual_selectcheckblank_24.svg
+13:13:50  INFO      Step 9b: right-clicking left basket → Actions → Delete…
+13:13:50  INFO        ► [Left basket                   ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt6:0:AP1:r1:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+13:13:52  INFO        ► [menu:Actions                  ]  tag=td        id=–  title=–  alt=–  aria=–
+13:13:55  INFO        ► [menu:Delete                   ]  tag=td        id=–  title=–  alt=–  aria=–
+13:13:56  INFO      Step 10: waiting for Delete confirmation dialog…
+13:13:56  INFO        ► [Delete OK                     ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt6:0:AP1:r1:0:r8:0:cb1  title=–  alt=–  aria=–
+13:13:57  INFO      Waiting for Items sub-box to disappear…
+13:13:59  INFO      Items deleted.
+13:13:59  INFO      Collecting all direct children…
+13:13:59  INFO        ► [Item Structure top card       ]  tag=rect      id=–  title=–  alt=–  aria=–
+13:14:01  INFO        ► [Collect All Direct Children   ]  tag=td        id=–  title=–  alt=–  aria=–
+13:14:02  INFO      Right-panel basket populated.
+13:14:02  INFO      Collection complete.
+13:14:02  INFO      Assigning basket to Kitting…
+13:14:02  INFO      Step 14: right-clicking right-panel basket…
+13:14:02  INFO        ► [Right basket                  ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt6:0:AP1:r3:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+13:14:03  WARNING   Step 'assign_basket' attempt 1/3 failed: Message: The element with the reference 2e89553f-77f3-4514-a02e-493e30f1bae4 is stale; either its node document is not the active document, or it is no longer connected to the DOM; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:831:5
+getKnownElement@chrome://remote/content/marionette/json.sys.mjs:412:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:270:20
+cloneObject/result<@chrome://remote/content/marionette/json.sys.mjs:53:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:53:25
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:298:16
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:298:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:302:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:174:30
+
+13:14:05  INFO      Step 14: right-clicking right-panel basket…
+13:14:05  INFO        ► [Right basket                  ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt6:0:AP1:r3:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+13:14:08  INFO        ► [menu:Actions                  ]  tag=td        id=–  title=–  alt=–  aria=–
+13:14:10  INFO        ► [menu:Assign                   ]  tag=td        id=–  title=–  alt=–  aria=–
+13:14:11  INFO      Step 15: waiting for 'Assign Operation Items' dialog to open…
+13:14:16  INFO      Step 15: dialog open — clicking OK…
+13:14:16  INFO        ► [Assign dialog OK              ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt6:0:AP1:r3:0:r22:0:cb3  title=–  alt=–  aria=–
+13:14:16  INFO      Waiting for Assign dialog to close…
+13:14:20  INFO      Assignment complete.
+13:14:20  INFO      Verification: clicking 'Expand All' to reveal all sub-panels…
+13:14:20  INFO        ► [Expand All                    ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt6:0:AP1:r1:0:cil02  title=Expand All  alt=–  aria=–
+13:14:22  INFO      Verification: counting bold 'Items' text nodes in canvas…
+13:14:22  INFO      Bold 'Items' node count: 1
+13:14:22  INFO      ✓ Verification passed for 512478-DG-GPC (Items count = 1).
+13:14:22  INFO      Save and Close…
+13:14:22  INFO        ► [Save and Close                ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt6:0:AP1:cb2  title=–  alt=–  aria=–
+13:14:24  INFO      Returned to search page.
+13:14:25  INFO      Opening Manage Work Definitions…
+13:14:25  INFO        ► [Favorites star                ]  tag=a         id=_FOpt1:_UISfavIconu  title=Favorites and Recent Items  alt=–  aria=–
+13:14:26  INFO        ► [Manage Work Definitions       ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MainAreaTab2::disAcr  title=–  alt=–  aria=–
+13:14:26  INFO      Manage Work Definitions loaded.
+13:14:26  INFO      ✓  512478-DG-GPC complete.
+13:14:26  INFO      ============================================================
+13:14:26  INFO      RUN SUMMARY
+13:14:26  INFO        Successful   : 4
+13:14:26  INFO        Skipped      : 0
+13:14:26  INFO        Needs review : 0
+13:14:26  INFO      ============================================================
+13:14:26  INFO      No exceptions to export.
