@@ -9021,3 +9021,205 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild
 13:44:48  INFO        Skipped items      : ['4022-7182']
 13:44:48  INFO      ============================================================
 13:44:48  INFO      Exceptions exported → C:\Users\kmageshkumar\OneDrive - Ichor Systems\Scripts\WD Refresher Webpage\wd_exceptions.xlsx  (1 row(s))
+13:51:46  INFO      Loaded 1 item(s) from 'items.xlsx'.
+13:51:46  INFO      ====== WebDriver manager ======
+13:51:48  INFO      Get LATEST geckodriver version for None firefox
+13:51:48  INFO      Getting latest mozilla release info for v0.36.0
+13:51:49  INFO      About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win64.zip
+13:51:50  INFO      Driver downloading response is 200
+13:51:51  INFO      Get LATEST geckodriver version for None firefox
+13:51:52  INFO      Get LATEST geckodriver version for None firefox
+13:51:53  INFO      Driver has been saved in cache [C:\Users\kmageshkumar\.wdm\drivers\geckodriver\win64\v0.36.0]
+13:52:00  INFO      Opening Oracle Cloud…
+13:52:04  INFO      Login page detected – logging in automatically…
+13:52:04  INFO        ► [Username field                ]  tag=input     id=okta-signin-username  title=–  alt=–  aria=–
+13:52:05  INFO        ► [Next / Continue               ]  tag=input     id=okta-signin-submit  title=–  alt=–  aria=–
+13:52:06  INFO        ► [Password field                ]  tag=input     id=okta-signin-password  title=–  alt=–  aria=–
+13:52:06  INFO        ► [Sign In                       ]  tag=input     id=okta-signin-submit  title=–  alt=–  aria=–
+13:52:09  INFO      Login complete.
+13:52:09  INFO      Opening Manage Work Definitions…
+13:52:12  INFO        ► [Favorites star                ]  tag=a         id=pt1:_UISfavIconu  title=Favorites and Recent Items  alt=–  aria=–
+13:52:14  INFO        ► [Manage Work Definitions       ]  tag=a         id=pt1:_UISfpr1:0:itr1_RI:0:cl3_RI  title=Manage Work Definitions  alt=–  aria=–
+13:52:16  INFO      Manage Work Definitions loaded.
+13:52:16  INFO      Item 1 / 1
+13:52:16  INFO      ──────────────────────────────────────────────────
+13:52:16  INFO      Processing: 4022-717-32441
+13:52:16  INFO      Searching for: 4022-717-32441
+13:52:16  INFO        ► [Item field                    ]  tag=input     id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1:value00::content  title=–  alt=–  aria= Item
+13:52:17  INFO        ► [Search button                 ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1::search  title=–  alt=–  aria=–
+13:52:18  INFO      Waiting for search results…
+13:52:32  INFO      Opening Main (version=8, prod_priority=1).
+13:52:32  INFO        ► [Main link                     ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:AT2:_ATp:wdTbl:7:cl1  title=–  alt=–  aria=–
+13:58:18  INFO      Loaded 1 item(s) from 'items.xlsx'.
+13:58:18  INFO      ====== WebDriver manager ======
+13:58:19  INFO      Get LATEST geckodriver version for None firefox
+13:58:20  INFO      Getting latest mozilla release info for v0.36.0
+13:58:21  INFO      About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win64.zip
+13:58:22  INFO      Driver downloading response is 200
+13:58:23  INFO      Get LATEST geckodriver version for None firefox
+13:58:24  INFO      Get LATEST geckodriver version for None firefox
+13:58:25  INFO      Driver has been saved in cache [C:\Users\kmageshkumar\.wdm\drivers\geckodriver\win64\v0.36.0]
+13:58:31  INFO      Opening Oracle Cloud…
+13:58:36  INFO      Login page detected – logging in automatically…
+13:58:36  INFO        ► [Username field                ]  tag=input     id=okta-signin-username  title=–  alt=–  aria=–
+13:58:37  INFO        ► [Next / Continue               ]  tag=input     id=okta-signin-submit  title=–  alt=–  aria=–
+13:58:38  INFO        ► [Password field                ]  tag=input     id=okta-signin-password  title=–  alt=–  aria=–
+13:58:38  INFO        ► [Sign In                       ]  tag=input     id=okta-signin-submit  title=–  alt=–  aria=–
+13:58:42  INFO      Login complete.
+13:58:42  INFO      Opening Manage Work Definitions…
+13:58:45  INFO        ► [Favorites star                ]  tag=a         id=pt1:_UISfavIconu  title=Favorites and Recent Items  alt=–  aria=–
+13:58:46  INFO        ► [Manage Work Definitions       ]  tag=a         id=pt1:_UISfpr1:0:itr1_RI:0:cl3_RI  title=Manage Work Definitions  alt=–  aria=–
+13:58:48  INFO      Manage Work Definitions loaded.
+13:58:48  INFO      Item 1 / 1
+13:58:48  INFO      ──────────────────────────────────────────────────
+13:58:48  INFO      Processing: 4022-717-32441
+13:58:48  INFO      Searching for: 4022-717-32441
+13:58:49  INFO        ► [Item field                    ]  tag=input     id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1:value00::content  title=–  alt=–  aria= Item
+13:58:50  INFO        ► [Search button                 ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1::search  title=–  alt=–  aria=–
+13:58:51  INFO      Waiting for search results…
+13:58:52  INFO      Checking if there are more versions below the visible area…
+13:58:52  WARNING   Could not find scrollable table container
+13:59:06  INFO      Opening Main (version=8, prod_priority=1).
+13:59:06  INFO        ► [Main link                     ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:AT2:_ATp:wdTbl:7:cl1  title=–  alt=–  aria=–
+14:23:24  INFO      Loaded 1 item(s) from 'items.xlsx'.
+14:23:24  INFO      ====== WebDriver manager ======
+14:23:25  INFO      Get LATEST geckodriver version for None firefox
+14:23:26  INFO      Getting latest mozilla release info for v0.36.0
+14:23:27  INFO      About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win64.zip
+14:23:28  INFO      Driver downloading response is 200
+14:23:29  INFO      Get LATEST geckodriver version for None firefox
+14:23:30  INFO      Get LATEST geckodriver version for None firefox
+14:23:31  INFO      Driver has been saved in cache [C:\Users\kmageshkumar\.wdm\drivers\geckodriver\win64\v0.36.0]
+14:23:38  INFO      Opening Oracle Cloud…
+14:23:42  INFO      Login page detected – logging in automatically…
+14:23:42  INFO        ► [Username field                ]  tag=input     id=okta-signin-username  title=–  alt=–  aria=–
+14:23:43  INFO        ► [Next / Continue               ]  tag=input     id=okta-signin-submit  title=–  alt=–  aria=–
+14:23:43  INFO        ► [Password field                ]  tag=input     id=okta-signin-password  title=–  alt=–  aria=–
+14:23:44  INFO        ► [Sign In                       ]  tag=input     id=okta-signin-submit  title=–  alt=–  aria=–
+14:23:47  INFO      Login complete.
+14:23:47  INFO      Opening Manage Work Definitions…
+14:23:50  INFO        ► [Favorites star                ]  tag=a         id=pt1:_UISfavIconu  title=Favorites and Recent Items  alt=–  aria=–
+14:23:52  INFO        ► [Manage Work Definitions       ]  tag=a         id=pt1:_UISfpr1:0:itr1_RI:0:cl3_RI  title=Manage Work Definitions  alt=–  aria=–
+14:23:54  INFO      Manage Work Definitions loaded.
+14:23:54  INFO      Item 1 / 1
+14:23:54  INFO      ──────────────────────────────────────────────────
+14:23:54  INFO      Processing: 4022-717-32441
+14:23:54  INFO      Searching for: 4022-717-32441
+14:23:54  INFO        ► [Item field                    ]  tag=input     id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1:value00::content  title=–  alt=–  aria= Item
+14:23:56  INFO        ► [Search button                 ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1::search  title=–  alt=–  aria=–
+14:23:56  INFO      Waiting for search results…
+14:24:11  INFO      Opening Main (version=8, prod_priority=1).
+14:24:11  INFO        ► [Main link                     ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:AT2:_ATp:wdTbl:7:cl1  title=–  alt=–  aria=–
+14:27:04  INFO      Loaded 1 item(s) from 'items.xlsx'.
+14:27:04  INFO      ====== WebDriver manager ======
+14:27:05  INFO      Get LATEST geckodriver version for None firefox
+14:27:06  INFO      Getting latest mozilla release info for v0.36.0
+14:27:07  INFO      About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win64.zip
+14:27:08  INFO      Driver downloading response is 200
+14:27:08  INFO      Get LATEST geckodriver version for None firefox
+14:27:10  INFO      Get LATEST geckodriver version for None firefox
+14:27:11  INFO      Driver has been saved in cache [C:\Users\kmageshkumar\.wdm\drivers\geckodriver\win64\v0.36.0]
+14:27:17  INFO      Opening Oracle Cloud…
+14:27:22  INFO      Login page detected – logging in automatically…
+14:27:22  INFO        ► [Username field                ]  tag=input     id=okta-signin-username  title=–  alt=–  aria=–
+14:27:23  INFO        ► [Next / Continue               ]  tag=input     id=okta-signin-submit  title=–  alt=–  aria=–
+14:27:23  INFO        ► [Password field                ]  tag=input     id=okta-signin-password  title=–  alt=–  aria=–
+14:27:24  INFO        ► [Sign In                       ]  tag=input     id=okta-signin-submit  title=–  alt=–  aria=–
+14:27:27  INFO      Login complete.
+14:27:27  INFO      Opening Manage Work Definitions…
+14:27:30  INFO        ► [Favorites star                ]  tag=a         id=pt1:_UISfavIconu  title=Favorites and Recent Items  alt=–  aria=–
+14:27:31  INFO        ► [Manage Work Definitions       ]  tag=a         id=pt1:_UISfpr1:0:itr1_RI:0:cl3_RI  title=Manage Work Definitions  alt=–  aria=–
+14:27:33  INFO      Manage Work Definitions loaded.
+14:27:33  INFO      Item 1 / 1
+14:27:33  INFO      ──────────────────────────────────────────────────
+14:27:33  INFO      Processing: 4022-717-32441
+14:27:33  INFO      Searching for: 4022-717-32441
+14:27:34  INFO        ► [Item field                    ]  tag=input     id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1:value00::content  title=–  alt=–  aria= Item
+14:27:35  INFO        ► [Search button                 ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:qryId1::search  title=–  alt=–  aria=–
+14:27:36  INFO      Waiting for search results…
+14:27:50  INFO      Highest version is 8 – scrolling to reveal more versions…
+14:27:50  INFO      Checking if there are more versions below the visible area…
+14:27:50  INFO      Scrolling scroller to bottom to reveal all versions…
+14:27:51  INFO      Scroller scrolled to bottom
+14:27:51  INFO      After scrolling, found 20 version(s)
+14:28:05  INFO      Opening Main (version=9, prod_priority=1).
+14:28:05  INFO        ► [Main link                     ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt2:0:AP1:AT2:_ATp:wdTbl:8:cl1  title=–  alt=–  aria=–
+14:28:08  INFO      Work Definition editor loaded.
+14:28:09  INFO      Clicking Expand All button…
+14:28:09  INFO        ► [Expand All                    ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r1:0:cil02  title=Expand All  alt=–  aria=–
+14:28:12  INFO      All operations expanded.
+14:28:12  INFO      Step 9: clicking 'Done Collect' tick…
+14:28:12  INFO        ► [Done Collect tick             ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r1:0:sModBt  title=Collect  alt=–  aria=–
+14:28:17  INFO      Scan iteration 1…
+14:28:17  INFO      Items sub-box found – deleting.
+14:28:17  INFO      Step 9a: clicking 'Not Collected' circle on Items…
+14:28:17  INFO        ► [Not Collected circle (Items)  ]  tag=image     id=–  title=–  alt=–  aria=–
+14:28:21  INFO      Step 9b: right-clicking left basket → Actions → Delete…
+14:28:21  INFO        ► [Left basket                   ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r1:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+14:28:23  INFO      Finding Actions menu and clicking 'Delete'…
+14:28:23  INFO        ✓ Actions menu found
+14:28:23  INFO        ► [menu:Actions                  ]  tag=td        id=–  title=–  alt=–  aria=–
+14:28:25  INFO        Finding 'Delete' action in menu…
+14:28:25  INFO          Trying selector 1: //td[contains(text(),'Delete')]
+14:28:25  INFO          ✓ Found with selector 1
+14:28:25  INFO        Clicking 'Delete' action…
+14:28:25  INFO        ► [menu:Delete                   ]  tag=td        id=–  title=–  alt=–  aria=–
+14:28:26  INFO        ✓ 'Delete' clicked successfully
+14:28:26  INFO      Step 10: Delete confirmation…
+14:28:27  INFO        ► [Delete OK                     ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r1:0:r8:0:cb1  title=–  alt=–  aria=–
+14:28:27  INFO      Waiting for Delete dialog to close…
+14:28:31  INFO      Items deleted from this operation.
+14:28:31  INFO      Scan iteration 2…
+14:28:36  INFO      No Items sub-box remaining – deletion complete.
+14:28:36  INFO      Collecting all direct children…
+14:28:36  INFO        ► [Item Structure top card       ]  tag=rect      id=–  title=–  alt=–  aria=–
+14:28:38  INFO        ► [Collect All Direct Children   ]  tag=td        id=–  title=–  alt=–  aria=–
+14:28:39  INFO      Right-panel basket populated.
+14:28:39  INFO      Collection complete.
+14:28:39  INFO      Assigning basket to Kitting…
+14:28:39  INFO      Step 14: right-clicking right-panel basket…
+14:28:39  INFO        ► [Right basket                  ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r3:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+14:28:40  WARNING   Step 'assign_basket' attempt 1/3 failed: Message: The element with the reference 0eb90e6c-dc76-4812-89b9-315dcfd44d67 is stale; either its node document is not the active document, or it is no longer connected to the DOM; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:814:5
+getKnownElement@chrome://remote/content/marionette/json.sys.mjs:412:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:270:20
+cloneObject/result<@chrome://remote/content/marionette/json.sys.mjs:53:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:53:25
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:298:16
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:298:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:302:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:174:30
+
+14:28:42  INFO      Step 14: right-clicking right-panel basket…
+14:28:42  INFO        ► [Right basket                  ]  tag=img       id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r3:0:basketImgLink::icon  title=Collected Items  alt=Collected Items  aria=–
+14:28:45  INFO        ► [menu:Actions                  ]  tag=td        id=–  title=–  alt=–  aria=–
+14:28:47  INFO        ► [menu:Assign                   ]  tag=td        id=–  title=–  alt=–  aria=–
+14:28:48  INFO      Step 15: waiting for 'Assign Operation Items' dialog to open…
+14:29:04  INFO      Step 15: dialog open — clicking OK…
+14:29:04  INFO        ► [Assign dialog OK              ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r3:0:r22:0:cb3  title=–  alt=–  aria=–
+14:29:04  INFO      Waiting for Assign dialog to close…
+14:29:16  INFO      Assignment complete.
+14:29:16  INFO      Verification: clicking 'Expand All' to reveal all sub-panels…
+14:29:16  INFO        ► [Expand All                    ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:r1:0:cil02  title=Collapse All  alt=–  aria=–
+14:29:18  INFO      Verification: counting bold 'Items' text nodes in canvas…
+14:29:18  INFO      Bold 'Items' node count: 1
+14:29:18  INFO      ✓ Verification passed for 4022-717-32441 (Items count = 1).
+14:29:18  INFO      Save and Close…
+14:29:18  INFO        ► [Save and Close                ]  tag=button    id=_FOpt1:_FOr1:0:_FONSr2:0:MAt3:0:AP1:cb2  title=–  alt=–  aria=–
+14:29:21  INFO      Returned to search page.
+14:29:22  INFO      Opening Manage Work Definitions…
+14:29:22  INFO        ► [Favorites star                ]  tag=a         id=_FOpt1:_UISfavIconu  title=Favorites and Recent Items  alt=–  aria=–
+14:29:22  INFO        ► [Manage Work Definitions       ]  tag=a         id=_FOpt1:_FOr1:0:_FONSr2:0:MainAreaTab2::disAcr  title=–  alt=–  aria=–
+14:29:23  INFO      Manage Work Definitions loaded.
+14:29:23  INFO      ✓  4022-717-32441 complete.
+14:29:23  INFO      ============================================================
+14:29:23  INFO      RUN SUMMARY
+14:29:23  INFO        Successful   : 1
+14:29:23  INFO        Skipped      : 0
+14:29:23  INFO        Needs review : 0
+14:29:23  INFO      ============================================================
+14:29:23  INFO      No exceptions to export.

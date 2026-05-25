@@ -598,6 +598,44 @@ def search_for_item(driver, item_number: str) -> None:
 # ============================================================
 #  STEP 5+6 – Select best result row and click Main
 # ============================================================
+def _scroll_to_latest_version(driver) -> None:
+    """
+    Scroll the search results table scroller div to reveal all versions.
+    Only scrolls if 8 versions are initially found (indicating more may be hidden).
+    """
+    log.info("Checking if there are more versions below the visible area…")
+
+    try:
+        # Find the scroller div by its id pattern (ends with ::scroller)
+        scroller = driver.execute_script("""
+            var divs = document.querySelectorAll('div[id*="::scroller"]');
+            for (var i = 0; i < divs.length; i++) {
+                var style = window.getComputedStyle(divs[i]);
+                if (style.overflow === 'auto' || style.overflowY === 'auto' || style.overflowY === 'scroll') {
+                    return divs[i];
+                }
+            }
+            return null;
+        """)
+
+        if scroller is None:
+            log.warning("Could not find scroller div")
+            return
+
+        log.info("Scrolling scroller to bottom to reveal all versions…")
+        driver.execute_script("""
+            var container = arguments[0];
+            container.scrollTop = container.scrollHeight;
+        """, scroller)
+
+        wait_spinner_gone(driver, timeout=SHORT_WAIT)
+        time.sleep(1.0)
+        log.info("Scroller scrolled to bottom")
+
+    except Exception as e:
+        log.warning("Error scrolling scroller: %s", e)
+
+
 def click_main_link(driver, item_number: str) -> bool:
     """
     Pick the row for item_number where Production Priority = 1 and Version
@@ -615,10 +653,8 @@ def click_main_link(driver, item_number: str) -> bool:
         return False
 
     rows = driver.find_elements(By.XPATH, row_xpath)
-    if not rows:
-        log.warning("No rows with 'Main' link for %s – skipping.", item_number)
-        return False
 
+    # Check if the highest version number is 8 (indicating more may be hidden)
     def digits(s: str) -> int:
         """Extract the first integer from a string; -1 if none found."""
         d = "".join(c for c in s if c.isdigit())
@@ -648,6 +684,35 @@ def click_main_link(driver, item_number: str) -> bool:
             return digits(result)
         # Fallback: strip every non-digit character from the whole cell text
         return digits(cell.text.strip())
+
+    # Find the highest version number
+    max_version = -1
+    for row in rows:
+        try:
+            cells = row.find_elements(By.TAG_NAME, "td")
+            texts = [c.text.strip() for c in cells]
+            offset = 1 if (texts and texts[0] == "") else 0
+
+            vc = row.find_elements(By.XPATH,
+                ".//td[contains(@headers,'version') or contains(@headers,'Version')]")
+            v = span_x1a_int(vc[0]) if vc else span_x1a_int(cells[5 + offset]) if len(cells) > 5 + offset else -1
+
+            if v > max_version:
+                max_version = v
+        except (IndexError, StaleElementReferenceException):
+            continue
+
+    # Scroll to reveal all versions if the highest version is 8
+    if max_version == 8:
+        log.info("Highest version is 8 – scrolling to reveal more versions…")
+        _scroll_to_latest_version(driver)
+        # Re-query rows after scrolling
+        rows = driver.find_elements(By.XPATH, row_xpath)
+        log.info("After scrolling, found %d version(s)", len(rows))
+
+    if not rows:
+        log.warning("No rows with 'Main' link for %s – skipping.", item_number)
+        return False
 
     best_row, best_v = None, -1
     for row in rows:
