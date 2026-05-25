@@ -311,10 +311,84 @@ def _click_menu_item(driver, text: str) -> None:
     ActionChains(driver).move_to_element(item).pause(0.2).click().perform()
     time.sleep(0.5)
 
-def _actions_then(driver, child: str) -> None:
+def _actions_then(driver, action_name: str) -> None:
     """
+    Right-click context menu: Actions → [action_name] (e.g., Delete).
+
+    Uses multiple selector strategies to handle different menu rendering states.
+    """
+    log.info("Finding Actions menu and clicking '%s'…", action_name)
+
+    # Wait for the context menu to appear
+    try:
+        menu = _w(driver, MEDIUM_WAIT).until(
+            EC.presence_of_element_located((By.XPATH, "//td[contains(text(),'Actions')]")))
+        log.info("  ✓ Actions menu found")
+    except TimeoutException:
+        log.error("  ✗ Actions menu NOT found")
+        log.info("  Dumping all visible TD elements with text:")
+        try:
+            all_tds = driver.find_elements(By.XPATH, "//td")
+            for idx, td in enumerate(all_tds[:20]):
+                log.info("    [%d] %s", idx, td.text[:50])
+        except:
+            pass
+        raise
+
+    # Click the Actions menu item
+    js_click(driver, menu, "menu:Actions")
+    wait_spinner_gone(driver, timeout=SHORT_WAIT)
+    time.sleep(1.0)
+
+    # Find the specific action (Delete, etc.) using multiple selectors
+    log.info("  Finding '%s' action in menu…", action_name)
+
+    selectors = [
+        f"//td[contains(text(),'{action_name}')]",
+        f"//td[normalize-space()='{action_name}']",
+        f"//div[contains(text(),'{action_name}')]",
+        f"//*[contains(text(),'{action_name}')]",
+    ]
+
+    action_element = None
+    for selector_idx, selector in enumerate(selectors):
+        try:
+            log.info("    Trying selector %d: %s", selector_idx + 1, selector)
+            action_element = _w(driver, SHORT_WAIT).until(
+                EC.presence_of_element_located((By.XPATH, selector)))
+            log.info("    ✓ Found with selector %d", selector_idx + 1)
+            break
+        except TimeoutException:
+            log.info("    ✗ Selector %d failed", selector_idx + 1)
+            continue
+
+    if action_element is None:
+        log.error("  ✗ '%s' action NOT found with any selector", action_name)
+        log.info("  Dumping all visible menu items:")
+        try:
+            all_items = driver.find_elements(By.XPATH, "//td | //div[@role='menuitem']")
+            for idx, item in enumerate(all_items[:30]):
+                log.info("    [%d] Tag=%s, Text='%s'", idx, item.tag_name, item.text[:50])
+        except:
+            pass
+        raise RuntimeError(f"Could not locate '{action_name}' in menu")
+
+    # Click the action
+    log.info("  Clicking '%s' action…", action_name)
+    try:
+        js_click(driver, action_element, f"menu:{action_name}")
+        log.info("  ✓ '%s' clicked successfully", action_name)
+    except Exception as e:
+        log.error("  ✗ Failed to click '%s': %s", action_name, e)
+        raise
+
+    wait_spinner_gone(driver, timeout=SHORT_WAIT)
+
+def _actions_then_original(driver, child: str) -> None:
+    """
+    Original v1.1 version for Assign.
     In the open context menu: click 'Actions' to reveal the sub-menu,
-    wait for it to appear, then click the child item ('Delete' or 'Assign').
+    wait for it to appear, then click the child item ('Assign').
     """
     _w(driver, SHORT_WAIT).until(
         EC.presence_of_element_located(
@@ -328,7 +402,7 @@ def _actions_then(driver, child: str) -> None:
     )
     highlight(driver, actions_td, "menu:Actions")
     ActionChains(driver).move_to_element(actions_td).pause(0.2).click().perform()
-    time.sleep(1.0)   # wait for sub-menu animation
+    time.sleep(1.0)
 
     _click_menu_item(driver, child)
 
@@ -663,6 +737,22 @@ def double_click_kitting(driver) -> None:
     log.info("Kitting expanded.")
 
 # ============================================================
+#  EXPAND ALL OPERATIONS
+# ============================================================
+def _expand_all_operations(driver) -> None:
+    """Click Expand All to show all operation cards."""
+    log.info("Clicking Expand All button…")
+    btn = find(driver, By.XPATH, _EXPAND_ALL_BTN, timeout=SHORT_WAIT)
+    js_click(driver, btn, "Expand All")
+    wait_spinner_gone(driver, timeout=SHORT_WAIT)
+    time.sleep(3.0)
+    log.info("All operations expanded.")
+
+def expand_all_operations(driver) -> None:
+    """Public wrapper."""
+    retry_step("expand_all_operations", _expand_all_operations, driver)
+
+# ============================================================
 #  SELECTORS  (confirmed from live DOM inspection)
 # ============================================================
 
@@ -817,12 +907,66 @@ def _do_delete_items(driver) -> None:
     log.info("Items deleted.")
 
 def delete_items_if_present(driver) -> None:
-    log.info("Checking for Items sub-box in Kitting…")
-    if maybe(driver, By.XPATH, _ITEMS_SVG_TEXT, timeout=5) is None:
-        log.info("No Items sub-box – nothing to delete.")
-        return
-    log.info("Items sub-box found – deleting.")
-    retry_step("delete_items", _do_delete_items, driver)
+    """
+    Delete items sequentially, one operation at a time.
+
+    Process:
+    1. Find first Items (operations already expanded by caller)
+    2. Tick → Circle → Delete it
+    3. Loop back to find next Items
+    4. Repeat until none remain
+    """
+    max_iterations = 10
+    iteration = 0
+
+    # Click Done Collect tick once - it stays clicked across operations
+    log.info("Step 9: clicking 'Done Collect' tick…")
+    tick = find(driver, By.XPATH, _TICK_ICON, timeout=SHORT_WAIT)
+    js_click(driver, tick, "Done Collect tick")
+    wait_spinner_gone(driver, timeout=SHORT_WAIT)
+    time.sleep(3.0)
+
+    # Wait for SVG canvas to be fully rendered after tick click
+    find(driver, By.XPATH, "//*[name()='svg']", timeout=MEDIUM_WAIT)
+    time.sleep(1.0)
+
+    while iteration < max_iterations:
+        iteration += 1
+        log.info("Scan iteration %d…", iteration)
+
+        # Find first remaining Items
+        items = maybe(driver, By.XPATH, _ITEMS_SVG_TEXT, timeout=5)
+        if items is None:
+            log.info("No Items sub-box remaining – deletion complete.")
+            return
+
+        log.info("Items sub-box found – deleting.")
+
+        # DELETE THIS OPERATION'S ITEMS
+        log.info("Step 9a: clicking 'Not Collected' circle on Items…")
+        circle = _find_items_circle(driver)
+        svg_click(driver, circle, "Not Collected circle (Items)")
+        wait_spinner_gone(driver, timeout=SHORT_WAIT)
+        time.sleep(3.0)
+
+        log.info("Step 9b: right-clicking left basket → Actions → Delete…")
+        basket = find(driver, By.XPATH, _BASKET_LEFT, timeout=SHORT_WAIT)
+        right_click(driver, basket, "Left basket")
+        _actions_then(driver, "Delete")
+
+        log.info("Step 10: Delete confirmation…")
+        _w(driver, MEDIUM_WAIT).until(
+            EC.presence_of_element_located((By.XPATH, "//button[normalize-space()='OK']")))
+        _confirm_ok(driver, "Delete OK")
+
+        # Wait for the Delete dialog to disappear
+        log.info("Waiting for Delete dialog to close…")
+        wait_gone(driver, By.XPATH, "//div[contains(@class,'x1jo') and normalize-space()='Delete']", timeout=LONG_WAIT)
+        wait_spinner_gone(driver, timeout=LONG_WAIT)
+        time.sleep(1.0)
+        log.info("Items deleted from this operation.")
+
+    log.warning("Reached max iterations (%d)", max_iterations)
 
 # ============================================================
 #  STEP 12-13 – Collect All Direct Children
@@ -880,7 +1024,7 @@ def _do_assign_basket(driver) -> None:
     log.info("Step 14: right-clicking right-panel basket…")
     basket = find(driver, By.XPATH, _BASKET_RIGHT, timeout=SHORT_WAIT)
     right_click(driver, basket, "Right basket")
-    _actions_then(driver, "Assign")
+    _actions_then_original(driver, "Assign")
 
     # Wait for the Assign Operation Items dialog title to appear in the DOM.
     # This is the definitive signal that the dialog is fully open.
@@ -989,7 +1133,10 @@ def process_item(driver, item_number: str) -> tuple:
     if not click_main_link(driver, item_number):
         return "skipped", None
 
-    double_click_kitting(driver)
+    # Wait for the SVG canvas to be fully loaded before expanding
+    find(driver, By.XPATH, "//*[name()='svg']", timeout=MEDIUM_WAIT)
+    time.sleep(1.0)
+    expand_all_operations(driver)
     delete_items_if_present(driver)
     collect_all_direct_children(driver)
     assign_basket_to_kitting(driver)
